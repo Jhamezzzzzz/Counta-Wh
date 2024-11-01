@@ -1,0 +1,25 @@
+{
+  "short_name": "Shortage",
+  "name": "Shortage",
+  "icons": [
+    {
+      "src": "https://th.bing.com/th/id/R.5848369b94793a4a77ac3b55b5c2ca9e?rik=18w7E62SCz4fCA&riu=http%3a%2f%2fwww.carlogos.org%2flogo%2fToyota-text-logo-3000x550.png&ehk=nBHkyymrFWlpZH4Ac%2b%2bn6RZHD%2fgYKf5MzBMq5k7nNn0%3d&risl=&pid=ImgRaw&r=0",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://th.bing.com/th/id/R.5848369b94793a4a77ac3b55b5c2ca9e?rik=18w7E62SCz4fCA&riu=http%3a%2f%2fwww.carlogos.org%2flogo%2fToyota-text-logo-3000x550.png&ehk=nBHkyymrFWlpZH4Ac%2b%2bn6RZHD%2fgYKf5MzBMq5k7nNn0%3d&risl=&pid=ImgRaw&r=0",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://th.bing.com/th/id/R.5848369b94793a4a77ac3b55b5c2ca9e?rik=18w7E62SCz4fCA&riu=http%3a%2f%2fwww.carlogos.org%2flogo%2fToyota-text-logo-3000x550.png&ehk=nBHkyymrFWlpZH4Ac%2b%2bn6RZHD%2fgYKf5MzBMq5k7nNn0%3d&risl=&pid=ImgRaw&r=0",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>DAY NO SHORTAGE MATERIAL</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .app-container {
+            position: relative;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 140px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 80px;
+            margin-top: -50px;
+            text-align: center;
+        }
+
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .time-box {
+            background-color: red;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            min-width: 200px;
+            text-align: center;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <img src="https://th.bing.com/th/id/R.5848369b94793a4a77ac3b55b5c2ca9e?rik=18w7E62SCz4fCA&riu=http%3a%2f%2fwww.carlogos.org%2flogo%2fToyota-text-logo-3000x550.png&ehk=nBHkyymrFWlpZH4Ac%2b%2bn6RZHD%2fgYKf5MzBMq5k7nNn0%3d&risl=&pid=ImgRaw&r=0" alt="Logo" class="logo" />
+        <h1 class="title">DAY NO SHORTAGE MATERIAL</h1>
+        <div class="countdown-container">
+            <div class="time-box">
+                <span id="days">13 Days</span>
+            </div>
+            <div class="time-box">
+                <span id="hours">17 Hours</span>
+            </div>
+            <div class="time-box">
+                <span id="minutes">0 Minutes</span>
+            </div>
+            <div class="time-box">
+                <span id="seconds">0 Seconds</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let totalSeconds = (13 * 24 * 3600) + (17 * 3600);
+        const daysElement = document.getElementById('days');
+        const hoursElement = document.getElementById('hours');
+        const minutesElement = document.getElementById('minutes');
+        const secondsElement = document.getElementById('seconds');
+
+        setInterval(() => {
+            totalSeconds++;
+            const days = Math.floor(totalSeconds / (24 * 3600));
+            const hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+            const minutes = Math.floor((totalSeconds % 3600) / 60);
+            const seconds = totalSeconds % 60;
+
+            daysElement.textContent = `${days} Days`;
+            hoursElement.textContent = `${hours} Hours`;
+            minutesElement.textContent = `${minutes} Minutes`;
+            secondsElement.textContent = `${seconds} Seconds`;
+        }, 1000);
+    </script>
+</body>
+</html>
